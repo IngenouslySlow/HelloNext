@@ -1,32 +1,30 @@
+import React from "react";
+import Nav from "../components/Navbar";
+import Footer from "../components/Footer";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-export default function Home() {
+const about = () => {
   return (
     <>
       <Head>
-        <title>Ninja Zone | Home</title>
-        <meta name="keywords" content="This is my content for the seo" />
+        <title>Ninja Zone | About</title>
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem iusto laborum ullam harum distinctio earum incidunt
           eius quas. Vel, dolores temporibus corporis numquam amet repellendus
           cumque illum itaque saepe quia.
         </p>
-        <p className={styles.text}>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem iusto laborum ullam harum distinctio earum incidunt
           eius quas. Vel, dolores temporibus corporis numquam amet repellendus
           cumque illum itaque saepe quia.
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}>See Ninja Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default about;
